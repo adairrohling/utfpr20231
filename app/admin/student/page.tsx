@@ -1,7 +1,7 @@
 import { getAllStudent } from "@/app/model/StudentService";
-
+export const revalidate = 0
 export default async function StudentPage(){
-     const dynamic = "force-dynamic"
+    
      const students = await getAllStudent();
     return (
         <>
