@@ -16,7 +16,7 @@ export default async function StudentPage(){
             <tbody>
                 {students.map(student => (  
 
-                <tr key={student.id}> <td>{student.name}</td> <td>{student.email}</td> <td><a href="/admin/student/edit">Editar</a></td> </tr>
+                <tr key={student.id}> <td>{student.name}</td> <td>{student.email}</td> <td><a href={`/admin/student/edit?id=${student.id}`}>Editar</a></td> </tr>
 
                 ))}
             </tbody>

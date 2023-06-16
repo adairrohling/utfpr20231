@@ -1,9 +1,9 @@
 import { NextResponse } from "next/server"
-import { deleteStudent, getStudentById, updateStudentById } from "@/app/model/StudentService"
+import { deleteStudentById, getStudentById, updateStudentById } from "@/app/model/StudentService"
 
 
 export async function DELETE(request: Request, { params }: any) {
-    deleteStudent(params.id)
+    deleteStudentById(params.id)
     return NextResponse.json({ sucess: "ok" })
 
 }
