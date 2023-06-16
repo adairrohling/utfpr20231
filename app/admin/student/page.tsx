@@ -1,6 +1,7 @@
 import { getAllStudent } from "@/app/model/StudentService";
 
 export default async function StudentPage(){
+     const dynamic = "force-dynamic"
      const students = await getAllStudent();
     return (
         <>
